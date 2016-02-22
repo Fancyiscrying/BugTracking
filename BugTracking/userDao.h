@@ -15,5 +15,4 @@
 - (BOOL)insertUser:(User *)user;
 - (void)deleteUserbyUserMobile;
 - (void)modifyUser;
-- (NSString *)path;
 @end

@@ -17,7 +17,7 @@
 }
 
 
-- (NSString *)path
++ (NSString *)path
 {
     NSArray *arr = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *Path = [arr objectAtIndex:0];
@@ -30,7 +30,7 @@
 
 - (void)createUserTable
 {
-    if (sqlite3_open([ [self path] UTF8String], &sqlite) ==SQLITE_OK) {
+    if (sqlite3_open([ [CreateDataBase path] UTF8String], &sqlite) ==SQLITE_OK) {
         NSLog(@"数据库打开成功");
         NSString *sql = @"CREATE TABLE IF NOT EXISTS User(username TEXT PRIMARY KEY , password TEXT NOT NULL ,nickname TEXT NOT NULL, mobile TEXT NOT NULL)";
         char *error;

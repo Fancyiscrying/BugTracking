@@ -29,7 +29,7 @@
 {
     
     
-    if (sqlite3_open([[self path]UTF8String], &sqlite) == SQLITE_OK) {
+    if (sqlite3_open([[CreateDataBase path]UTF8String], &sqlite) == SQLITE_OK) {
         
         NSLog(@"数据库打开成功");
         
@@ -98,19 +98,6 @@ else
 
 }
 
-- (NSString *)path
-{
-    
-    NSArray *arr = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *path = [arr objectAtIndex:0];
-    NSString *datapath = [path stringByAppendingString:DATA_BASE];
-    return datapath;
 
-    
-    
-
-
-
-}
 
 @end

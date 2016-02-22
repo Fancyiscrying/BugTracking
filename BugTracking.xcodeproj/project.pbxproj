@@ -99,8 +99,6 @@
 				B1E52F421C76C50900969E88 /* AppDelegate.h */,
 				B1E52F431C76C50900969E88 /* AppDelegate.m */,
 				B1E52F451C76C50900969E88 /* ViewController.h */,
-				B1E52F7F1C7AAE1700969E88 /* CreateDataBase.h */,
-				B1E52F801C7AAE1700969E88 /* CreateDataBase.m */,
 				B1E52F461C76C50900969E88 /* ViewController.m */,
 				B1E52F481C76C50900969E88 /* Main.storyboard */,
 				B1E52F4B1C76C50900969E88 /* Assets.xcassets */,
@@ -163,6 +161,8 @@
 		B1E52F701C7838AB00969E88 /* sqlite */ = {
 			isa = PBXGroup;
 			children = (
+				B1E52F7F1C7AAE1700969E88 /* CreateDataBase.h */,
+				B1E52F801C7AAE1700969E88 /* CreateDataBase.m */,
 			);
 			name = sqlite;
 			sourceTree = "<group>";
