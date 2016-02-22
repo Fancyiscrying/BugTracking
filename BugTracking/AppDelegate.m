@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CreateDataBase.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    
+    [NSThread sleepForTimeInterval:1.0];//1秒后启动界面
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    UIStoryboard *storyboard  = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"login"];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:controller];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    
+    
+    /*
+     
+     建表
+     
+     
+     */
+    
+    CreateDataBase *database = [[CreateDataBase alloc] init];
+    [database createUserTable];
     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

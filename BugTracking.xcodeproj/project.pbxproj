@@ -13,6 +13,17 @@
 		B1E52F4A1C76C50900969E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E52F481C76C50900969E88 /* Main.storyboard */; };
 		B1E52F4C1C76C50900969E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E52F4B1C76C50900969E88 /* Assets.xcassets */; };
 		B1E52F4F1C76C50900969E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E52F4D1C76C50900969E88 /* LaunchScreen.storyboard */; };
+		B1E52F601C76EDDC00969E88 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1E52F5F1C76EDDC00969E88 /* 4.jpg */; };
+		B1E52F621C76F10A00969E88 /* 3 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1E52F611C76F10A00969E88 /* 3 14.jpg */; };
+		B1E52F641C76F16000969E88 /* 1 20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1E52F631C76F16000969E88 /* 1 20.jpg */; };
+		B1E52F6A1C76F30F00969E88 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52F691C76F30F00969E88 /* LoginViewController.m */; };
+		B1E52F6C1C7707AA00969E88 /* login 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52F6B1C7707AA00969E88 /* login 3.png */; };
+		B1E52F6E1C7709CC00969E88 /* login 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E52F6D1C7709CC00969E88 /* login 2.png */; };
+		B1E52F731C7845F000969E88 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52F721C7845F000969E88 /* RegisterViewController.m */; };
+		B1E52F7A1C7AA6A100969E88 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52F791C7AA6A100969E88 /* User.m */; };
+		B1E52F7E1C7AA9AA00969E88 /* userDao.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52F7D1C7AA9AA00969E88 /* userDao.m */; };
+		B1E52F811C7AAE1700969E88 /* CreateDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52F801C7AAE1700969E88 /* CreateDataBase.m */; };
+		B1E52F831C7AB3AD00969E88 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E52F821C7AB3AD00969E88 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,25 @@
 		B1E52F4B1C76C50900969E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1E52F4E1C76C50900969E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1E52F501C76C50900969E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E52F571C76C58D00969E88 /* UserdefalutsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserdefalutsMacro.h; sourceTree = "<group>"; };
+		B1E52F5A1C76E6DD00969E88 /* DefinationMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefinationMacro.h; sourceTree = "<group>"; };
+		B1E52F5F1C76EDDC00969E88 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		B1E52F611C76F10A00969E88 /* 3 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3 14.jpg"; sourceTree = "<group>"; };
+		B1E52F631C76F16000969E88 /* 1 20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1 20.jpg"; sourceTree = "<group>"; };
+		B1E52F681C76F30F00969E88 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B1E52F691C76F30F00969E88 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B1E52F6B1C7707AA00969E88 /* login 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login 3.png"; sourceTree = "<group>"; };
+		B1E52F6D1C7709CC00969E88 /* login 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login 2.png"; sourceTree = "<group>"; };
+		B1E52F6F1C77FF6600969E88 /* Macro.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.pch; sourceTree = "<group>"; };
+		B1E52F711C7845F000969E88 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		B1E52F721C7845F000969E88 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		B1E52F781C7AA6A100969E88 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B1E52F791C7AA6A100969E88 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B1E52F7C1C7AA9AA00969E88 /* userDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userDao.h; sourceTree = "<group>"; };
+		B1E52F7D1C7AA9AA00969E88 /* userDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userDao.m; sourceTree = "<group>"; };
+		B1E52F7F1C7AAE1700969E88 /* CreateDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDataBase.h; sourceTree = "<group>"; };
+		B1E52F801C7AAE1700969E88 /* CreateDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDataBase.m; sourceTree = "<group>"; };
+		B1E52F821C7AB3AD00969E88 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = ../../../../usr/lib/libsqlite3.0.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E52F831C7AB3AD00969E88 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +73,7 @@
 		B1E52F331C76C50900969E88 = {
 			isa = PBXGroup;
 			children = (
+				B1E52F821C7AB3AD00969E88 /* libsqlite3.0.dylib */,
 				B1E52F3E1C76C50900969E88 /* BugTracking */,
 				B1E52F3D1C76C50900969E88 /* Products */,
 			);
@@ -58,13 +90,22 @@
 		B1E52F3E1C76C50900969E88 /* BugTracking */ = {
 			isa = PBXGroup;
 			children = (
+				B1E52F7B1C7AA98B00969E88 /* Dao */,
+				B1E52F771C7AA67600969E88 /* pojo */,
+				B1E52F701C7838AB00969E88 /* sqlite */,
+				B1E52F5E1C76E8EE00969E88 /* ViewController */,
+				B1E52F581C76C71E00969E88 /* Resource */,
+				B1E52F561C76C53D00969E88 /* macro */,
 				B1E52F421C76C50900969E88 /* AppDelegate.h */,
 				B1E52F431C76C50900969E88 /* AppDelegate.m */,
 				B1E52F451C76C50900969E88 /* ViewController.h */,
+				B1E52F7F1C7AAE1700969E88 /* CreateDataBase.h */,
+				B1E52F801C7AAE1700969E88 /* CreateDataBase.m */,
 				B1E52F461C76C50900969E88 /* ViewController.m */,
 				B1E52F481C76C50900969E88 /* Main.storyboard */,
 				B1E52F4B1C76C50900969E88 /* Assets.xcassets */,
 				B1E52F4D1C76C50900969E88 /* LaunchScreen.storyboard */,
+				B1E52F6F1C77FF6600969E88 /* Macro.pch */,
 				B1E52F501C76C50900969E88 /* Info.plist */,
 				B1E52F3F1C76C50900969E88 /* Supporting Files */,
 			);
@@ -77,6 +118,71 @@
 				B1E52F401C76C50900969E88 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1E52F561C76C53D00969E88 /* macro */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52F571C76C58D00969E88 /* UserdefalutsMacro.h */,
+				B1E52F5A1C76E6DD00969E88 /* DefinationMacro.h */,
+			);
+			name = macro;
+			sourceTree = "<group>";
+		};
+		B1E52F581C76C71E00969E88 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52F591C76C73C00969E88 /* picture */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		B1E52F591C76C73C00969E88 /* picture */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52F6B1C7707AA00969E88 /* login 3.png */,
+				B1E52F6D1C7709CC00969E88 /* login 2.png */,
+				B1E52F5F1C76EDDC00969E88 /* 4.jpg */,
+				B1E52F631C76F16000969E88 /* 1 20.jpg */,
+				B1E52F611C76F10A00969E88 /* 3 14.jpg */,
+			);
+			name = picture;
+			sourceTree = "<group>";
+		};
+		B1E52F5E1C76E8EE00969E88 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52F681C76F30F00969E88 /* LoginViewController.h */,
+				B1E52F691C76F30F00969E88 /* LoginViewController.m */,
+				B1E52F711C7845F000969E88 /* RegisterViewController.h */,
+				B1E52F721C7845F000969E88 /* RegisterViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B1E52F701C7838AB00969E88 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sqlite;
+			sourceTree = "<group>";
+		};
+		B1E52F771C7AA67600969E88 /* pojo */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52F781C7AA6A100969E88 /* User.h */,
+				B1E52F791C7AA6A100969E88 /* User.m */,
+			);
+			name = pojo;
+			sourceTree = "<group>";
+		};
+		B1E52F7B1C7AA98B00969E88 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				B1E52F7C1C7AA9AA00969E88 /* userDao.h */,
+				B1E52F7D1C7AA9AA00969E88 /* userDao.m */,
+			);
+			name = Dao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +242,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E52F601C76EDDC00969E88 /* 4.jpg in Resources */,
+				B1E52F6E1C7709CC00969E88 /* login 2.png in Resources */,
 				B1E52F4F1C76C50900969E88 /* LaunchScreen.storyboard in Resources */,
+				B1E52F641C76F16000969E88 /* 1 20.jpg in Resources */,
+				B1E52F621C76F10A00969E88 /* 3 14.jpg in Resources */,
 				B1E52F4C1C76C50900969E88 /* Assets.xcassets in Resources */,
+				B1E52F6C1C7707AA00969E88 /* login 3.png in Resources */,
 				B1E52F4A1C76C50900969E88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E52F731C7845F000969E88 /* RegisterViewController.m in Sources */,
+				B1E52F6A1C76F30F00969E88 /* LoginViewController.m in Sources */,
+				B1E52F7A1C7AA6A100969E88 /* User.m in Sources */,
+				B1E52F7E1C7AA9AA00969E88 /* userDao.m in Sources */,
+				B1E52F811C7AAE1700969E88 /* CreateDataBase.m in Sources */,
 				B1E52F471C76C50900969E88 /* ViewController.m in Sources */,
 				B1E52F441C76C50900969E88 /* AppDelegate.m in Sources */,
 				B1E52F411C76C50900969E88 /* main.m in Sources */,
@@ -261,7 +377,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BugTracking/Macro.pch;
 				INFOPLIST_FILE = BugTracking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fancy.BugTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +391,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BugTracking/Macro.pch;
 				INFOPLIST_FILE = BugTracking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fancy.BugTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
