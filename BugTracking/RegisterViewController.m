@@ -47,7 +47,7 @@
 }
 */
 
-#pragma 上传用户注册数据数据
+#pragma 上传用户注册数据
 - (IBAction)uploadUserData:(id)sender {
     
     userDao *userdao =[[userDao alloc] init];
