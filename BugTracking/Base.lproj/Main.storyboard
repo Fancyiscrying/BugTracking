@@ -14,6 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="XsP-ZK-LWT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S7h-Bi-q9b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5B-EA-VNa">
@@ -160,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9R2-Ud-7KU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.5" y="-1127"/>
+            <point key="canvasLocation" x="6" y="-1176"/>
         </scene>
         <!--登陆-->
         <scene sceneID="nLi-SG-4xv">
@@ -171,6 +172,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gZd-te-DJf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yUb-ln-JbK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BugTracking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsa-lO-eYO">
@@ -286,7 +288,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rwg-du-fIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859.5" y="-1132"/>
+            <point key="canvasLocation" x="514.5" y="-1176"/>
+        </scene>
+        <!--主页-->
+        <scene sceneID="jnW-yw-fbF">
+            <objects>
+                <viewController storyboardIdentifier="homepage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hGB-OU-O1D" customClass="HompageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v0M-Xv-9wh"/>
+                        <viewControllerLayoutGuide type="bottom" id="iWf-5K-p3V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="53h-fp-rOm">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFM-lS-554">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="ffH-sh-QzW"/>
+                                    <tabBarItem systemItem="favorites" id="You-Rz-HdR"/>
+                                    <tabBarItem systemItem="favorites" id="77D-HI-g1f"/>
+                                    <tabBarItem systemItem="favorites" id="LbY-MW-1uo"/>
+                                    <tabBarItem systemItem="more" id="O4m-kw-bQF"/>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="551" width="400" height="49"/>
+                                </variation>
+                            </tabBar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hFM-lS-554"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hFM-lS-554"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="主页" id="0GD-Ak-hHf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOs-lk-zLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751" y="-1781"/>
         </scene>
     </scenes>
 </document>

@@ -24,6 +24,7 @@
 		B1E52F7E1C7AA9AA00969E88 /* userDao.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52F7D1C7AA9AA00969E88 /* userDao.m */; };
 		B1E52F811C7AAE1700969E88 /* CreateDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52F801C7AAE1700969E88 /* CreateDataBase.m */; };
 		B1E52F831C7AB3AD00969E88 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E52F821C7AB3AD00969E88 /* libsqlite3.0.dylib */; };
+		B1ED2A591C7C056D0014F3A8 /* HompageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ED2A581C7C056D0014F3A8 /* HompageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		B1E52F7F1C7AAE1700969E88 /* CreateDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDataBase.h; sourceTree = "<group>"; };
 		B1E52F801C7AAE1700969E88 /* CreateDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDataBase.m; sourceTree = "<group>"; };
 		B1E52F821C7AB3AD00969E88 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = ../../../../usr/lib/libsqlite3.0.dylib; sourceTree = "<group>"; };
+		B1ED2A571C7C056D0014F3A8 /* HompageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HompageViewController.h; sourceTree = "<group>"; };
+		B1ED2A581C7C056D0014F3A8 /* HompageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HompageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 			children = (
 				B1E52F681C76F30F00969E88 /* LoginViewController.h */,
 				B1E52F691C76F30F00969E88 /* LoginViewController.m */,
+				B1ED2A571C7C056D0014F3A8 /* HompageViewController.h */,
+				B1ED2A581C7C056D0014F3A8 /* HompageViewController.m */,
 				B1E52F711C7845F000969E88 /* RegisterViewController.h */,
 				B1E52F721C7845F000969E88 /* RegisterViewController.m */,
 			);
@@ -262,6 +267,7 @@
 			files = (
 				B1E52F731C7845F000969E88 /* RegisterViewController.m in Sources */,
 				B1E52F6A1C76F30F00969E88 /* LoginViewController.m in Sources */,
+				B1ED2A591C7C056D0014F3A8 /* HompageViewController.m in Sources */,
 				B1E52F7A1C7AA6A100969E88 /* User.m in Sources */,
 				B1E52F7E1C7AA9AA00969E88 /* userDao.m in Sources */,
 				B1E52F811C7AAE1700969E88 /* CreateDataBase.m in Sources */,
@@ -420,6 +426,7 @@
 				B1E52F551C76C50900969E88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

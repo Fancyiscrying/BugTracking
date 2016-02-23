@@ -16,17 +16,22 @@
 
 }
 
+#pragma 类方法用来获得路径
+
 
 + (NSString *)path
 {
     NSArray *arr = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *Path = [arr objectAtIndex:0];
     NSString *datapath = [Path stringByAppendingString:DATA_BASE];
-    NSLog(@"%@",datapath);
+   // NSLog(@"%@",datapath);
     return datapath;
     
 
 }
+
+
+#pragma 用来创建user表
 
 - (void)createUserTable
 {

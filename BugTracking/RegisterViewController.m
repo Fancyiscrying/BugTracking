@@ -10,7 +10,7 @@
 #import "userDao.h"
 #import "User.h"
 
-@interface RegisterViewController ()  
+@interface RegisterViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameTf;                           //姓名栏
 @property (weak, nonatomic) IBOutlet UITextField *passwordTf;                           //密码栏
 @property (weak, nonatomic) IBOutlet UITextField *nicknameTf;                           //昵称栏
@@ -24,7 +24,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.usernameTf.delegate = self ;
+    self.passwordTf.delegate = self ;
+    self.nicknameTf.delegate = self ;
+    self.mobilephoneTf.delegate = self;
     NSLog(@"加载了RegisterViewController视图");
     // Do any additional setup after loading the view.
 }
@@ -44,6 +47,7 @@
 }
 */
 
+#pragma 上传用户注册数据数据
 - (IBAction)uploadUserData:(id)sender {
     
     userDao *userdao =[[userDao alloc] init];
@@ -91,6 +95,14 @@
   
     }
     
+}
+
+- (bool)textFieldShouldReturn:(UITextField *)textField
+{
+
+    [textField resignFirstResponder];
+    return YES;
+
 }
 
 - (IBAction)backToLoginView:(id)sender {

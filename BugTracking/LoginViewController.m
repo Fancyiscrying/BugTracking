@@ -5,8 +5,10 @@
 //  Created by Fancy on 16/2/19.
 //  Copyright © 2016年 Fancy. All rights reserved.
 //
-
+#import "HompageViewController.h"
 #import "LoginViewController.h"
+#import "userDao.h"
+#import "User.h"
 
 @interface LoginViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameTf;
@@ -99,6 +101,7 @@
 */
     
     
+    
 }
 
 
@@ -136,9 +139,61 @@
 }
 */
 
+#pragma 登陆
 - (IBAction)login:(id)sender {
+    
+    if ([self.usernameTf.text isEqualToString:@""] ==YES) {
+        UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"警告" message:@"请输入用户名！！！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [view show];
+  
+    }
+    else if ([self.passwordTf.text isEqualToString:@"" ] == YES)
+    {
+        UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"警告" message:@"请输入密码！！！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [view show];
+    
+    }
+    else
+    {
+    
+    userDao *_userdao = [[userDao alloc] init];
+    
+   NSMutableArray *arr = [_userdao findUserbyUserName:self.usernameTf.text];
+    
+    if ([arr count]<=0) {
+        NSLog(@"用户名不存在");
+        UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"警告" message:@"用户名不存在" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [view show];
+    }
+    
+    else
+    {
+        User *user =[arr objectAtIndex:0];
+        if([user.username isEqualToString:self.passwordTf.text])
+        {
+        
+            NSLog(@"登陆成功");
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"homepage"];
+            [self.navigationController pushViewController:viewController animated:YES];
+        
+        }
+        else
+        {
+        
+            NSLog(@"密码错误");
+            UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"警告" message:@"您的输入密码有误"delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [view show];
+        
+        }
+    }
+    
 }
 
+    
+}
+
+#pragma 注册
 - (IBAction)register:(id)sender {
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];

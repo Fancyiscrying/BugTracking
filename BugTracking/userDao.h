@@ -11,7 +11,7 @@
 
 @interface userDao : NSObject
 
-- (void)findUserbyUserName;
+- (NSMutableArray *)findUserbyUserName:(NSString *)username;
 - (BOOL)insertUser:(User *)user;
 - (void)deleteUserbyUserMobile;
 - (void)modifyUser;
