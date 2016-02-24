@@ -302,32 +302,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFM-lS-554">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBW-Du-POg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="ffH-sh-QzW"/>
-                                    <tabBarItem systemItem="favorites" id="You-Rz-HdR"/>
-                                    <tabBarItem systemItem="favorites" id="77D-HI-g1f"/>
-                                    <tabBarItem systemItem="favorites" id="LbY-MW-1uo"/>
-                                    <tabBarItem systemItem="more" id="O4m-kw-bQF"/>
-                                </items>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="上传数据"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="551" width="400" height="49"/>
+                                    <rect key="frame" x="20" y="488" width="60" height="30"/>
                                 </variation>
-                            </tabBar>
+                                <connections>
+                                    <action selector="upLoadData:" destination="hGB-OU-O1D" eventType="touchUpInside" id="rdN-cg-Y5J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmJ-19-uAJ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="下载图片"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="294" y="482" width="60" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="downLoadPicture:" destination="hGB-OU-O1D" eventType="touchUpInside" id="Vho-1D-Rb2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAk-eJ-elI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="JSON"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="93" width="40" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="jsonRequest:" destination="hGB-OU-O1D" eventType="touchUpInside" id="6zh-Ma-scl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p9-vo-OY8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="XML"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="157" y="93" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="xmlRequest:" destination="hGB-OU-O1D" eventType="touchUpInside" id="ppZ-TK-xSl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYi-O2-ZpY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="plist"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="304" y="93" width="41" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="plistRequest:" destination="hGB-OU-O1D" eventType="touchUpInside" id="eqT-vB-jEE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r41-C8-vrS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="下载数据"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="150" y="488" width="60" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="downLoadData:" destination="hGB-OU-O1D" eventType="touchUpInside" id="47g-LD-5gg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="hFM-lS-554"/>
+                                <exclude reference="sBW-Du-POg"/>
+                                <exclude reference="nmJ-19-uAJ"/>
+                                <exclude reference="tAk-eJ-elI"/>
+                                <exclude reference="9p9-vo-OY8"/>
+                                <exclude reference="QYi-O2-ZpY"/>
+                                <exclude reference="r41-C8-vrS"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="hFM-lS-554"/>
+                                <include reference="sBW-Du-POg"/>
+                                <include reference="nmJ-19-uAJ"/>
+                                <include reference="tAk-eJ-elI"/>
+                                <include reference="9p9-vo-OY8"/>
+                                <include reference="QYi-O2-ZpY"/>
+                                <include reference="r41-C8-vrS"/>
                             </mask>
                         </variation>
                     </view>

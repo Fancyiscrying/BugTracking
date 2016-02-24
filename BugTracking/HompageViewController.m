@@ -7,9 +7,15 @@
 //
 
 #import "HompageViewController.h"
-
+#import "AFNetworking.h"
+static NSString *const BaseURLString = @"http://www.raywenderlich.com/downloads/weather_sameple/";
 @interface HompageViewController ()
-
+- (IBAction)upLoadData:(id)sender;
+- (IBAction)downLoadData:(id)sender;
+- (IBAction)downLoadPicture:(id)sender;
+- (IBAction)xmlRequest:(id)sender;
+- (IBAction)plistRequest:(id)sender;
+- (IBAction)jsonRequest:(id)sender;
 @end
 
 @implementation HompageViewController
@@ -34,4 +40,34 @@
 }
 */
 
+#pragma 上传数据
+- (IBAction)upLoadData:(id)sender {
+}
+
+#pragma 下载数据
+
+- (IBAction)downLoadData:(id)sender {
+}
+#pragma 下载图片
+- (IBAction)downLoadPicture:(id)sender {
+}
+
+- (IBAction)xmlRequest:(id)sender {
+}
+
+- (IBAction)plistRequest:(id)sender {
+}
+
+- (IBAction)jsonRequest:(id)sender {
+    
+    
+    NSString *weatherUrl = [NSString stringWithFormat:@"%@weather.php?format=json",BaseURLString];
+    NSURL *url = [NSURL URLWithString:weatherUrl];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+
+    
+   
+    
+}
 @end

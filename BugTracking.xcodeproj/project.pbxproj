@@ -16,6 +16,9 @@
 		B19C3D461C7C5C4400792C81 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B19C3D3B1C7C5C4400792C81 /* AFURLRequestSerialization.m */; };
 		B19C3D471C7C5C4400792C81 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B19C3D3D1C7C5C4400792C81 /* AFURLResponseSerialization.m */; };
 		B19C3D481C7C5C4400792C81 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B19C3D3F1C7C5C4400792C81 /* AFURLSessionManager.m */; };
+		B1CA26961C7D3123005ECC04 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA26951C7D3123005ECC04 /* Security.framework */; };
+		B1CA26981C7D3139005ECC04 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA26971C7D3139005ECC04 /* MobileCoreServices.framework */; };
+		B1CA269A1C7D314B005ECC04 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA26991C7D314B005ECC04 /* SystemConfiguration.framework */; };
 		B1E52F411C76C50900969E88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52F401C76C50900969E88 /* main.m */; };
 		B1E52F441C76C50900969E88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52F431C76C50900969E88 /* AppDelegate.m */; };
 		B1E52F471C76C50900969E88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E52F461C76C50900969E88 /* ViewController.m */; };
@@ -56,6 +59,9 @@
 		B19C3D3D1C7C5C4400792C81 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		B19C3D3E1C7C5C4400792C81 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		B19C3D3F1C7C5C4400792C81 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		B1CA26951C7D3123005ECC04 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B1CA26971C7D3139005ECC04 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B1CA26991C7D314B005ECC04 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B1E52F3C1C76C50900969E88 /* BugTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E52F401C76C50900969E88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1E52F421C76C50900969E88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,7 +90,7 @@
 		B1E52F7D1C7AA9AA00969E88 /* userDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userDao.m; sourceTree = "<group>"; };
 		B1E52F7F1C7AAE1700969E88 /* CreateDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDataBase.h; sourceTree = "<group>"; };
 		B1E52F801C7AAE1700969E88 /* CreateDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDataBase.m; sourceTree = "<group>"; };
-		B1E52F821C7AB3AD00969E88 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = ../../../../usr/lib/libsqlite3.0.dylib; sourceTree = "<group>"; };
+		B1E52F821C7AB3AD00969E88 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = /usr/lib/libsqlite3.0.dylib; sourceTree = "<absolute>"; };
 		B1ED2A571C7C056D0014F3A8 /* HompageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HompageViewController.h; sourceTree = "<group>"; };
 		B1ED2A581C7C056D0014F3A8 /* HompageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HompageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +100,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CA269A1C7D314B005ECC04 /* SystemConfiguration.framework in Frameworks */,
+				B1CA26981C7D3139005ECC04 /* MobileCoreServices.framework in Frameworks */,
+				B1CA26961C7D3123005ECC04 /* Security.framework in Frameworks */,
 				B1E52F831C7AB3AD00969E88 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +139,6 @@
 		B1E52F331C76C50900969E88 = {
 			isa = PBXGroup;
 			children = (
-				B1E52F821C7AB3AD00969E88 /* libsqlite3.0.dylib */,
 				B1E52F3E1C76C50900969E88 /* BugTracking */,
 				B1E52F3D1C76C50900969E88 /* Products */,
 			);
@@ -172,6 +180,10 @@
 			isa = PBXGroup;
 			children = (
 				B1E52F401C76C50900969E88 /* main.m */,
+				B1E52F821C7AB3AD00969E88 /* libsqlite3.0.dylib */,
+				B1CA26951C7D3123005ECC04 /* Security.framework */,
+				B1CA26991C7D314B005ECC04 /* SystemConfiguration.framework */,
+				B1CA26971C7D3139005ECC04 /* MobileCoreServices.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
